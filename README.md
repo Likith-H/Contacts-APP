@@ -1,4 +1,7 @@
-STEPS FOR EXECUTION:
+STEPS FOR EXECUTION:[App CODE FILES.zip](https://github.com/Likith-H/Contacts-APP/files/8255191/App.CODE.FILES.zip)
+[Contacts Execution Instructions Screenshots.zip](https://github.com/Likith-H/Contacts-APP/files/8255192/Contacts.Execution.Instructions.Screenshots.zip)
+[Contacts app Run Instructions with Screenshots.docx](https://github.com/Likith-H/Contacts-APP/files/8255200/Contacts.app.Run.Instructions.with.Screenshots.docx)
+
 
 STEP  1: Install xampp- Firstly, install a virtual server on your computer (eg Xampp, Wamp).
  Xampp is a free and open-source cross-platform web server solution stack package developed by Apache Friends, consisting mainly of the Apache HTTP Server, MySQL database, and    interpreters for scripts written in the PHP and Perl programming languages. 
