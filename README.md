@@ -1,7 +1,11 @@
-STEPS FOR EXECUTION:[App CODE FILES.zip](https://github.com/Likith-H/Contacts-APP/files/8255191/App.CODE.FILES.zip)
+[App CODE FILES.zip](https://github.com/Likith-H/Contacts-APP/files/8255191/App.CODE.FILES.zip)
 [Contacts Execution Instructions Screenshots.zip](https://github.com/Likith-H/Contacts-APP/files/8255192/Contacts.Execution.Instructions.Screenshots.zip)
 [Contacts app Run Instructions with Screenshots.docx](https://github.com/Likith-H/Contacts-APP/files/8255200/Contacts.app.Run.Instructions.with.Screenshots.docx)
 
+
+STEPS FOR EXECUTION:
+
+NOTE :DO NOT CHANGE THE DATABASE NAME ,TABLE'S NAME,NAME OF THE COLUMNS IN THE TABLE, NAME OF THE PHP FILES.
 
 STEP  1: Install xampp- Firstly, install a virtual server on your computer (eg Xampp, Wamp).
  Xampp is a free and open-source cross-platform web server solution stack package developed by Apache Friends, consisting mainly of the Apache HTTP Server, MySQL database, and    interpreters for scripts written in the PHP and Perl programming languages. 
@@ -12,13 +16,14 @@ STEP 3: Install Notepad++.
 
 STEP 4 :Make sure to run MYSQL and APACHE once you install the xampp.
 
-STEP 5:Now type localhost/phpmyadmin in your browser url.
+STEP 5:Now type " localhost/phpmyadmin " in your browser .
 
 STEP 6:Then in the left side of the PHP MYADMIN page ,click on NEW,then you will be prompted to enter the Database name,then type "login_sample_db" as database name,then click on "CREATE" button,thus the database will be created.
 
 STEP 7:once you click create,you will be prompted to  enter the table name,then type table name  as "users",select number of columns as 5,then click on 'GO' button .
 
-STEP 8:Now you will be asked enter the details of the table,Enter as shown below:
+STEP 8:Now you will be asked to enter the details of the table,Enter as shown below:
+
 CREATE TABLE users (
     id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
     user_id BIGINT NOT NULL UNIQUE,
@@ -27,21 +32,25 @@ CREATE TABLE users (
     secret  VARCHAR(100) NOTNULL,
     date DATETIME DEFAULT CURRENT_TIMESTAMP
 );
+
 Once you enter the details ,then press "SAVE" Button.
 
-STEP 9:In the similar way create another table called"contacts",and enter the details as shown  below:
+
+STEP 9:In the similar way create another table called "contacts",and enter the details as shown  below:
+
 CREATE TABLE contacts(
    user_id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
    name VARCHAR(100) NOT NULL UNIQUE,
    password VARCHAR(100) NOT NULL,
    email VARCHAR(100) NOT NULL UNIQUE,
 );
+
 Once you enter the details ,then press "SAVE" Button.
 
 STEP 10: Once the database is created ,now download the attached php files and place them in the "logo1" folder as shown below:
                           PATH:This pc->windows(c)->xampp->htdocs->logo1
                           
-STEP 11:Now go to your browser Url and type -> "localhost/logo1/connection.php", and press enter,to make sure connection with database is established.
+STEP 11:Now go to your browser  and type -> "localhost/logo1/connection.php", and press enter,to make sure connection with database is established(A blank page will appear if connection is successfully established).
 
 STEP 12: once the connection is established ,now type ->"localhost/logo1/signup.php",and press enter,now you will be prompted with SIGN UP webpage.
 
